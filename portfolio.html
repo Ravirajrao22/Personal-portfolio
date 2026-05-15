@@ -740,7 +740,12 @@
             justify-content: center;
             align-items: center;
         }
-
+        .hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
         .hero-avatar-wrap {
             position: relative;
             width: 340px;
@@ -1075,6 +1080,8 @@
         .project-card-2 {
             grid-column: span 5;
         }
+
+        /* Only 2 projects now */
 
         .project-card-3 {
             grid-column: span 4;
@@ -1547,7 +1554,7 @@
                     <rect x="2" y="15" width="11" height="11" rx="3" fill="currentColor" opacity="0.5" />
                     <rect x="15" y="15" width="11" height="11" rx="3" fill="currentColor" opacity="0.2" />
                 </svg>
-                YourName
+                Raviraj kumar rao
             </a>
 
             <!-- Desktop Nav -->
@@ -1627,12 +1634,8 @@
                         <div class="hero-avatar-ring" aria-hidden="true"></div>
                         <div class="hero-avatar-ring-2" aria-hidden="true"></div>
                         <div class="hero-avatar">
-                            <!-- Replace this SVG with your actual photo: <img src="your-photo.jpg" alt="Your Name" width="340" height="340"> -->
-                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1" aria-hidden="true">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                <circle cx="12" cy="7" r="4" />
-                            </svg>
+                             <img src="IMG-20251208-WA0114.jpg" alt="Your Name" width="340" height="340"> 
+                            
                         </div>
                     </div>
                 </div>
@@ -1664,7 +1667,7 @@
                             When I'm not building side projects, you'll find me exploring new design systems,
                             contributing to open source, or learning whatever tech catches my attention this week.
                         </p>
-                        <a href="#contact" class="btn-primary">
+                        <a href="cv fianl.pdf" download="Raviraj_Kumar_Rao_CV.pdf" class="btn-primary" id="cv-download-btn">
                             Download CV
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5" aria-hidden="true">
@@ -1675,12 +1678,12 @@
                         </a>
                         <div class="about-stats">
                             <div class="stat-card fade-in fade-in-1">
-                                <div class="stat-number">15+</div>
+                                <div class="stat-number">3+</div>
                                 <div class="stat-label">Projects Built</div>
                             </div>
                             <div class="stat-card fade-in fade-in-2">
-                                <div class="stat-number">2+</div>
-                                <div class="stat-label">Years Experience</div>
+                                <div class="stat-number">6+</div>
+                                <div class="stat-label">Months of  Experience</div>
                             </div>
                             <div class="stat-card fade-in fade-in-3">
                                 <div class="stat-number">100%</div>
@@ -1688,34 +1691,28 @@
                             </div>
                             <div class="stat-card fade-in fade-in-4">
                                 <div class="stat-number">∞</div>
-                                <div class="stat-label">Cups of Tea</div>
+                                <div class="stat-label">Cups of Coffee</div>
                             </div>
                         </div>
                     </div>
+<!-- About Visual -->
+<div class="about-image-wrap">
+    <div class="about-card glass">
+        <div class="about-card-inner">
+            <img src="IMG-20251208-WA0114.jpg" alt="Raviraj Kumar Rao">
+        </div>
+    </div>
 
-                    <!-- About Visual -->
-                    <div class="about-image-wrap">
-                        <div class="about-card glass">
-                            <div class="about-card-inner">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1" aria-hidden="true">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                                    <path d="M9 9l2 2 4-4" />
-                                    <path d="M9 15h6" />
-                                </svg>
-                                <p class="about-card-text">Replace with your photo<br>or an illustration</p>
-                            </div>
-                        </div>
-                        <div class="floating-badge floating-badge-1">
-                            <span class="badge-icon">⚡</span>
-                            <span class="badge-text">Fast Learner</span>
-                        </div>
-                        <div class="floating-badge floating-badge-2">
-                            <span class="badge-icon">🎨</span>
-                            <span class="badge-text">Design-Focused</span>
-                        </div>
-                    </div>
-                </div>
+    <div class="floating-badge floating-badge-1">
+        <span class="badge-icon">⚡</span>
+        <span class="badge-text">Fast Learner</span>
+    </div>
+
+    <div class="floating-badge floating-badge-2">
+        <span class="badge-icon">🎨</span>
+        <span class="badge-text">Design-Focused</span>
+    </div>
+</div>  
             </div>
         </section>
 
@@ -1743,7 +1740,7 @@
                     <!-- Project 1 (large) -->
                     <article class="project-card project-card-1 fade-in">
                         <div class="project-thumb">
-                            <div class="project-thumb-bg" aria-hidden="true">🛒</div>
+                            <div class="project-thumb-bg" aria-hidden="true">AASAMEDCHEM</div>
                         </div>
                         <div class="project-body">
                             <div class="project-tags">
@@ -1751,36 +1748,52 @@
                                 <span class="tag">Featured</span>
                             </div>
                             <h3 class="project-name">E-Commerce Platform</h3>
-                            <p class="project-desc">A full-stack e-commerce app with real-time inventory, Stripe
+                            <p class="project-desc">A full-stack e-commerce app with real-time inventory, Razorpay
                                 payments, and a sleek admin dashboard. Built for performance and scale.</p>
                             <div class="project-stack">
                                 <span class="stack-badge">React</span>
-                                <span class="stack-badge">Node.js</span>
-                                <span class="stack-badge">MongoDB</span>
-                                <span class="stack-badge">Stripe</span>
+                                <span class="stack-badge">Prisma</span>
+                                <span class="stack-badge">neon</span>
+                                <span class="stack-badge">Next.js</span>
                                 <span class="stack-badge">Tailwind</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
-                                    </svg>
-                                    GitHub
-                                </a>
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2.5" aria-hidden="true">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                        <polyline points="15 3 21 3 21 9" />
-                                        <line x1="10" y1="14" x2="21" y2="3" />
-                                    </svg>
-                                    Live Demo
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+<div class="project-links">
+
+    <!-- GitHub Link -->
+    <a href="https://github.com/Ravirajrao22/Raviraj-fork-aasamedchem"
+       class="project-link"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
+            aria-hidden="true">
+            <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
+        </svg>
+
+        GitHub Repo
+    </a>
+
+    <!-- Live Website Link -->
+    <a href="https://www.aasamedchem.com/"
+       class="project-link"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <svg width="14" height="14" viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            aria-hidden="true">
+
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+        </svg>
+
+        Live Website
+    </a>
+
+</div>aa
 
                     <!-- Project 2 -->
                     <article class="project-card project-card-2 fade-in fade-in-2">
@@ -1819,82 +1832,7 @@
                         </div>
                     </article>
 
-                    <!-- Projects 3, 4, 5 -->
-                    <article class="project-card project-card-3 fade-in fade-in-1">
-                        <div class="project-thumb">
-                            <div class="project-thumb-bg" aria-hidden="true">🤖</div>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags"><span class="tag">AI/ML</span></div>
-                            <h3 class="project-name">AI Chat App</h3>
-                            <p class="project-desc">GPT-powered chat interface with memory and document ingestion.</p>
-                            <div class="project-stack">
-                                <span class="stack-badge">Python</span>
-                                <span class="stack-badge">FastAPI</span>
-                                <span class="stack-badge">OpenAI</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
-                                    </svg>
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card project-card-4 fade-in fade-in-2">
-                        <div class="project-thumb">
-                            <div class="project-thumb-bg" aria-hidden="true">📱</div>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags"><span class="tag">Mobile</span></div>
-                            <h3 class="project-name">Habit Tracker</h3>
-                            <p class="project-desc">Cross-platform habit tracking app with streaks and insights.</p>
-                            <div class="project-stack">
-                                <span class="stack-badge">React Native</span>
-                                <span class="stack-badge">Firebase</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
-                                    </svg>
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card project-card-5 fade-in fade-in-3">
-                        <div class="project-thumb">
-                            <div class="project-thumb-bg" aria-hidden="true">✍️</div>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags"><span class="tag">UI/UX</span></div>
-                            <h3 class="project-name">Design System</h3>
-                            <p class="project-desc">Component library and design tokens for a scalable brand system.</p>
-                            <div class="project-stack">
-                                <span class="stack-badge">Figma</span>
-                                <span class="stack-badge">Storybook</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"
-                                        aria-hidden="true">
-                                        <path
-                                            d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
-                                    </svg>
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    
 
                 </div>
             </div>
@@ -2009,7 +1947,7 @@
                     </div>
 
                     <div class="contact-cta">
-                        <a href="mailto:hello@yourname.dev" class="btn-primary">
+                        <a href="https://mail.google.com/mail/?view=cm&to=ravikumarraj0408@gmail.com" class="btn-primary" target="_blank" rel="noopener noreferrer">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5" aria-hidden="true">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -2017,14 +1955,14 @@
                             </svg>
                             Send an Email
                         </a>
-                        <a href="mailto:hello@yourname.dev" class="btn-ghost contact-email">
-                            hello@yourname.dev
+                        <a href="https://mail.google.com/mail/?view=cm&to=ravikumarraj0408@gmail.com" class="btn-ghost contact-email" target="_blank" rel="noopener noreferrer">
+                            ravikumarraj0408@gmail.com
                         </a>
                     </div>
 
                     <div class="socials" role="list" aria-label="Social links">
                         <!-- GitHub -->
-                        <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Ravirajrao22" class="social-link" target="_blank" rel="noopener noreferrer"
                             aria-label="GitHub profile">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
@@ -2032,7 +1970,7 @@
                             </svg>
                         </a>
                         <!-- LinkedIn -->
-                        <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/in/raviraj-kumar-4ab1b62b2/" class="social-link" target="_blank" rel="noopener noreferrer"
                             aria-label="LinkedIn profile">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
@@ -2049,7 +1987,7 @@
                             </svg>
                         </a>
                         <!-- Instagram -->
-                        <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.instagram.com/ravirajrao3210/" class="social-link" target="_blank" rel="noopener noreferrer"
                             aria-label="Instagram profile">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" aria-hidden="true">
@@ -2068,11 +2006,11 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
-            <p class="footer-copy">© 2026 YourName. Designed & built with ❤️</p>
+            <p class="footer-copy">© 2026 Raviraj kumar rao.</p>
             <ul class="footer-links" role="list">
                 <li><a href="#hero">Top</a></li>
                 <li><a href="#projects">Work</a></li>
-                <li><a href="mailto:hello@yourname.dev">Email</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&to=ravikumarraj0408@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
             </ul>
         </div>
     </footer>
@@ -2179,6 +2117,36 @@
                 });
             });
         })();
+
+        // ===== CV DOWNLOAD =====
+        (function() {
+            var btn = document.getElementById('cv-download-btn');
+            if (!btn) return;
+            btn.addEventListener('click', function(e) {
+                // Direct download via fetch+blob for sandboxed environments
+                e.preventDefault();
+                fetch('./cv.pdf')
+                    .then(function(r) {
+                        if (!r.ok) throw new Error('CV file not found. Please place cv.pdf in the same folder.');
+                        return r.blob();
+                    })
+                    .then(function(blob) {
+                        var a = document.createElement('a');
+                        a.href = URL.createObjectURL(blob);
+                        a.download = 'Raviraj_Kumar_Rao_CV.pdf';
+                        document.body.appendChild(a);
+                        a.click();
+                        setTimeout(function() {
+                            URL.revokeObjectURL(a.href);
+                            document.body.removeChild(a);
+                        }, 1000);
+                    })
+                    .catch(function(err) {
+                        alert('CV not found. Please place your CV file named "cv.pdf" in the same folder as this HTML file.');
+                    });
+            });
+        })();
+
     </script>
 </body>
 
